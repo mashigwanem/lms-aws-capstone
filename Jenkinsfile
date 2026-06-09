@@ -15,7 +15,7 @@ pipeline {
                         aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
                         aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
                         aws configure set region us-east-1
-                        aws s3 sync site/ s3://lms-aws-capstone/ --acl public-read --delete
+                        aws s3 sync site/ s3://mphobucket1/ --acl public-read --delete
                     '''
                 }
             }
